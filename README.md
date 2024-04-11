@@ -10,6 +10,6 @@ Este projeto pessoal é um testemunho do poder da tecnologia como ferramenta edu
 
 ## Referências Bibliográficas
 
-- HTML Element Reference - MDN
-- CSS Reference - MDN
-- JavaScript Reference - MDN
+- [HTML Element Reference - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
+- [CSS Reference - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript Reference - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
