@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento, que é HTML5. -->
+<html lang="en"> <!-- Elemento raiz do documento HTML. O atributo 'lang' define o idioma do documento como inglês, podemos utilizar o portugês, mas utilizar o inglês é melhor para já se acostumar com a linguagem. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o documento responsivo em dispositivos móveis. -->
+    <link rel="stylesheet" href="Css/style.css"> <!-- Vincula o arquivo CSS externo ao documento HTML. -->
+    <title>Snake game</title> <!-- Título do documento. -->
+</head>
+
+<body> <!-- Conteúdo principal do documento HTML. -->
+
+    <div class="score">Pontuação: <span class="scoreValue">00</span></div> <!-- Exibe a pontuação do jogo. -->
+
+    <div class="menu"> <!-- Tela de menu do jogo. -->
+        <span class="Game-Over">Fim de jogo!</span> <!-- Mensagem de fim de jogo para quando a cobra colidir. -->
+        <span class="finalScore">Pontuação: <span>00</span></span> <!-- Exibe a pontuação final do jogo. -->
+
+        <button class="btn-play"> <!-- Botão para reiniciar o jogo. -->
+            Recomeçar
+        </button>
+    </div>
+
+    <canvas width="600" height="600"></canvas> <!-- Elemento onde o jogo será desenhado. -->
+    <script src="Js/script.js"></script> <!-- Vinculando o arquivo JavaScript externo ao documento HTML. -->
+</body>
+
+</html>

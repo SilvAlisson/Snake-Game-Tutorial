@@ -1,0 +1,73 @@
+/* Definindo a fonte personalizada para utilizar no jogo. */
+@font-face { 
+    font-family: 'pixel';
+    src: url(../Font/pixel.ttf) format('truetype'); /* Caminho para o arquivo de fonte e seu formato. */
+}
+/* Seleciona todos os elementos, remove as margens, o preenchimento, inclui o preenchimento e a borda no tamanho total do elemento como também define a fonte que desejamos utilizar. */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'pixel', sans-serif;
+}
+
+body { /* Selecionando o elemento body do HTML. */
+    display: flex; /* Define o tipo de exibição como flexível. */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da janela de visualização. */
+    justify-content: center; /* Centraliza os itens horizontalmente. */
+    align-items: center; /* Centraliza os itens verticalmente. */
+    flex-direction: column; /* Define a direção dos itens como coluna. */
+}
+ /* Seleciona o elemento canvas do HTML e define a cor do fundo. */
+canvas {
+    background-color: black;
+}
+ /* Estilizando o elemento 'score'. */
+.score {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem; /* Define o tamanho da fonte. */
+}
+ /* Estilizando o elemento 'scoreValue'. */
+.scoreValue {
+    font-weight: 500; /* Define a espessura da fonte. */
+    font-size: 4rem;
+    display:block; /* Define o tipo de exibição como bloco. */
+}
+ /* Estilizando o elemento 'menu'. */
+.menu {
+    position: absolute; /* precisamos definir a posição como absoluta para que ele apareça na frente da tela do nosso jogo. */
+    display: none; /* Escondemos o menu para que ele apareça somente quando precisamos. */
+    flex-direction: column; 
+    align-items: center;
+    color: aliceblue; /* Definindo a cor do texto. */
+    z-index: 1; /* Definindo a ordem de empilhamento como 1 para evitar bugs. */
+    justify-content: center;
+}
+ 
+.Game-Over {
+    text-transform: uppercase; /* Transforma o texto em maiúsculas. */
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 20px; /* Define a margem inferior para que não fique tudo muito junto. */
+}
+
+. {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 30px; /* novamente definindo a margem inferior para que os textos não fiquem muito juntos. */
+}
+/* Estilizando o botão de reiniciar. */
+.btn-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Define o espaço entre os itens. */
+    cursor: pointer; /* Alterando o formato do cursor do mouse. */
+    border-radius: 100px; /* Define o raio da borda. */
+    padding: 10px 15px 10px 10px; /* Define o preenchimento. */
+    font-size: 2rem;
+    font-weight: 700;
+    color: grey;
+}
